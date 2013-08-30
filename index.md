@@ -28,7 +28,7 @@ The commands included for some of the steps are for Linux (Ubuntu). If you are u
 
 ## Setting up Travis to automatically update the gh-pages branch
 
-* Copy the files `.travis.yml` and `build.sh` included in this repository to the the root folder of your GitHub repository's local copy.
+* Copy the files `.travis.yml`, `build.sh` and `Gemfile` included in this repository to the the root folder of your GitHub repository's local copy.
 * If the branch from which you build your gh-pages branch is any branch other than `master`, replace `master` with the name of your branch in the `branches` section of `.travis.yml`.
 * In `build.sh`, replace `[~GitHub user name~]` with your GitHub user name and `[~GitHub repository name~]` with the name of the repository for which you want to enable Jekyll+Prose.
 * Make `build.sh` executable (Command: `chmod +x build.sh`).
