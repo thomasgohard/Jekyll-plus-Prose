@@ -1,0 +1,10 @@
+language: ruby
+branches:
+  only:
+  - master
+script:
+- bundle exec jekyll build
+- ./build.sh
+global:
+  env:
+    secure: p5ZSP/iWQ2+k1g62gjs2OEM6c29HtzvKtriuiaQJe9HrmTJVXqWKGmT+ES1XIi7hmoKkOd9uXD7fPPZb7EiQHc2o3wNaNNM9LeoeneqZxt4q2RAd+C2eB2lE8mo1pvN1W/zstWNrKaxXN1kaMzN2hl601nZbnEfEpAZEmK4R7mw=
