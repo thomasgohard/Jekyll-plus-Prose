@@ -36,7 +36,7 @@ The commands included for some of the steps are for Linux (Ubuntu). If you are u
 * In the Personal Access Tokens section of the page, click on 'Create new token'.
 * Give the new token a description (e.g., `travis-push-[~name of the repository~]`) and click 'Create token'.
 * Copy the token (**Warning:** If you do not copy the token now, you will not be able to view it again later. You will have to destroy the token and create a new one.).
-* From the root folder of your GitHub repository's local copy, encrypt the token and the email address you use for GitHub to protect them (Command: `travis encrypt "GH_TOKEN=[~token you copied in the previous step~] GH_EMAIL=[~email you use for GitHub~]" --add global.env`).
+* From the root folder of your GitHub repository's local copy, encrypt the token and the email address you use for GitHub to protect them (Command: `travis encrypt "GH_TOKEN=[~token you copied in the previous step~] GH_EMAIL=[~email you use for GitHub~]" --add env.global`).
 * Add the Travis build status indicator to the `README.md` file of your GitHub repository as described in [The Travis documentation](http://about.travis-ci.org/docs/user/status-images/#Adding-Status-Images-to-README-Files).
 * Sign-in to Travis at [travis-ci.org](http://travis-ci.org/).
 * Click on your avatar/username at the top of the screen to go to your Profile page.
