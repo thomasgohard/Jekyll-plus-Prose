@@ -1,3 +1,5 @@
 org_name: thomasgohard
 repo_name: Jekyll-plus-Prose
 prose_branch: master
+
+root_url: http://thomasgohard.github.io/Jekyll-plus-Prose
