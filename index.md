@@ -54,17 +54,16 @@ The commands included for some of the steps are for Linux (Ubuntu). If you are u
 
 ## Converting Web pages to Markdown
 
-* For each Web page you want to convert:
-    * Convert the Web page to Markdown (Command: `pandoc -f html -t
+* Convert the Web page to Markdown (Command: `pandoc -f html -t
 markdown -o [~Filename for the converted document~].md [~URL of the
 Web page you want to convert~]`).
-    * Add `published: true` and `layout: [~Layout you want to use~]`
+* Add `published: true` and `layout: [~Layout you want to use~]`
 to the front matter of the converted document.
-    * In the converted document, remove all parts of the Web page that
+* In the converted document, remove all parts of the Web page that
 are part of the layout.
-    * Test building the converted document (Command: `jekyll build`).
-    * If the build returns any errors, correct them and re-run the
+* Test building the converted document (Command: `jekyll build`).
+* If the build returns any errors, correct them and re-run the
 build until there are no errors.
-    * Serve the built converted document (Command: `jekyll serve --watch`).
-    * Review the converted document in a Web browser (URL:
+* Serve the built converted document (Command: `jekyll serve --watch`).
+* Review the converted document in a Web browser (URL:
 `localhost:4000/[~Path to the converted document~]`).
