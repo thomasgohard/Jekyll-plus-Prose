@@ -1,7 +1,6 @@
 ---
 title: Enabling Jekyll+Prose on a GitHub repository
 language: en
-
 layout: default
 editable: true
 published: true
@@ -52,3 +51,20 @@ The commands included for some of the steps are for Linux (Ubuntu). If you are u
 * Create an include for the Prose edit link in the `_includes` folder (see the file `prose-edit-link.html` included in this repository for an example).
 * Add the line `editable: true` to the front matter of any document for which you want to enable Prose editing; add the line `editable: false` to the front matter of any document for which you want to disable Prose editing.
 * Add a link to the file `CORS_check.js` included in this repository at the end of the `<body>` of each of your layout templates to enable the fallback to the GitHub Web interface for browsers that do not support CORS, which is required by Prose.
+
+## Converting Web pages to Markdown
+
+* For each Web page you want to convert:
+    * Convert the Web page to Markdown (Command: `pandoc -f html -t
+markdown -o [~Filename for the converted document~].md [~URL of the
+Web page you want to convert~]`).
+    * Add `published: true` and `layout: [~Layout you want to use~]`
+to the front matter of the converted document.
+    * In the converted document, remove all parts of the Web page that
+are part of the layout.
+    * Test building the converted document (Command: `jekyll build`).
+    * If the build returns any errors, correct them and re-run the
+build until there are no errors.
+    * Serve the built converted document (Command: `jekyll serve --watch`).
+    * Review the converted document in a Web browser (URL:
+`localhost:4000/[~Path to the converted document~]`).
